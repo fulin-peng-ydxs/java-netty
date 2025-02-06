@@ -10,7 +10,7 @@
     //判断当前浏览器是否支持websocket
     if(window.WebSocket) {
         //go on
-        socket = new WebSocket("ws://localhost:8080/hello2");
+        socket = new WebSocket("ws://8.138.127.55/ws/event?token=ceded52af3c341ae79eafc248a36eb8d");
         //相当于channelReado, ev 收到服务器端回送的消息
         socket.onmessage = function (ev) {
             var rt = document.getElementById("responseText");
